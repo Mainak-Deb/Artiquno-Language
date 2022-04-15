@@ -343,5 +343,5 @@ Run code
 Artiquno.exe "example codes\sun.aq"
 ```
 Output:
-![alt text](images\sun_output.png)
+![sun_output](https://raw.githubusercontent.com/Mainak-Deb/Artiquno_dist/master/images/sun_output.png)
 
