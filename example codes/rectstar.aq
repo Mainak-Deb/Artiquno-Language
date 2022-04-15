@@ -1,0 +1,15 @@
+BUNCH->rect{
+    @size=[[int(200)]];
+    >>@size;
+    ^^90;
+    >>@size;
+    ^^90;
+    >>@size;
+    ^^90;
+    >>@size;
+};
+SPEED-VERYFAST;
+LOOP(50){
+    ^^9;
+    <rect>;
+};

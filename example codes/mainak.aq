@@ -1,0 +1,26 @@
+
+BUNCH->MOV{
+        >>20;
+        ^^36;      
+};
+
+
+BUNCH->FIRSTBUNCH{
+        LOOP(10){
+             <MOV>; 
+        };      
+};
+ FILL-R255G255B0;
+ STARTFILL;
+ LOOP(10){
+         <FIRSTBUNCH>;
+         ^^36;
+ };
+ ENDFILL;
+ PU;
+ >>70;
+ ^^90;
+ >>29;
+ PD;
+ TEXT(56)->[["Mainak"]];
+ HIDE;

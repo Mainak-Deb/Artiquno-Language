@@ -1,0 +1,13 @@
+BUNCH->triangle{
+    @size=[[int(200)]];
+    >>@size;
+    ^^120;
+    >>@size;
+    ^^120;
+    >>@size;
+};
+SPEED-VERYFAST;
+LOOP(50){
+    ^^9;
+    <triangle>;
+};

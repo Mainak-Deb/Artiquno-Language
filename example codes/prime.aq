@@ -1,0 +1,30 @@
+@n=TAKE[["Enter a number: "]] ;
+@m=[[int(int(@n)**(0.5))]];
+// WRITE->[[str(@m)]];
+@i=[[int(1)]];
+@ans=[[int(1)]];
+LOOP(@m){
+    @i=[[@i+1]];
+        
+    IF[[int(@n)%int(@i)!=0]]{ 
+        THEN->{
+            @ans=[[@ans+1]];
+            //WRITE->[[str(@i)+"\n"]];
+
+        }
+    };
+    //WRITE->[[str(@i)+"\n"]];
+};
+// WRITE->[[str(@ans)+" "+str(@m)+"\n"]];
+IF[[int(@m+1)==int(@ans)]]{ 
+        THEN->{
+            
+            WRITE->[[str("\nprime number")]];
+
+        }
+        ELSE->{
+            
+            WRITE->[[str("\nnot a prime number")]];
+
+        }
+    };

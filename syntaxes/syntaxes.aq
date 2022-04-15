@@ -1,0 +1,43 @@
+>>100; 		                    		    //forward
+<<50; 		                               //backward
+^^100;		                               //rotate
+PU;  		                                    //penup
+X100Y50;	                                    //moveto
+PD; 		                                    //pendown
+WINDOW-X400Y400;                                //window size
+LOOP(100){	                                    //loop
+                                                //code here
+}                       
+BG-R100G50B20                                   //background color
+COL-R100G50B2                                   //line color
+
+HIDE                                            //hide turtle
+@variable                                       //variable
+[[5*10]]                                        //expression
+SPEED-NORMAL;                                    //set speed to (VERYFAST|FAST|NORMAL|SLOW|VERYSLOW)
+SHOW;                                           //show turtle
+@variable=[[int(7)]]                            //assignemnt
+@variable1=@variable2                           //variable to variable assignment
+WRITE->[["HELLO EVERYONE"+@name]]               //print
+TEXT(20)->[["WELCOME BOSS"]]                    //text
+
+IF[[EXPRESSION]]{                               //CONDITION
+    THEN->{//IF INTRUCTION}
+    ELSE->{//IF INTRUCTION}
+}
+>>@variable;                                    //forward variable
+<<@variable;                                    //backward variable
+^^@variable;                                    //rotate variable
+
+FILL-R100G50B2;                                 //sets the fill color
+STARTFILL;                                      //start the fill color
+STOPFFILL;                                      //ends the fill color
+
+BUNCH->SETNAME{                                 //code replacer, acts like a function but not a function, we can't any parameter to it
+    //code here
+
+}
+
+<SETNAME>                                       //call BUNCH
+WIDTH->10;							    //set width of  pen					
+										

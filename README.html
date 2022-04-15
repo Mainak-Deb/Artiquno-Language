@@ -1,0 +1,617 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\debma\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.6.2\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="artiquno"><strong>Artiquno</strong></h1>
+
+<h3 class="mume-header" id="version-104">version 1.0.4</h3>
+
+<hr>
+<h2><img src="Artiquno.png" alt="Artiquno"></h2>
+<ol>
+<li>What is <strong>Artiquno</strong> ?</li>
+</ol>
+<blockquote>
+<p>Namaste everyone&#x1F60A; I am <strong>Mainak Deb</strong>, this is a programming language made by me, you can make many graphics and do normal programming tasks using this language.</p>
+</blockquote>
+<ol start="2">
+<li>Who am i ?</li>
+</ol>
+<blockquote>
+<p>I am a twenty years old Computer Science Student and a forever learner. I live in West Bengal, India.</p>
+</blockquote>
+<ol start="3">
+<li>Why i made this ?</li>
+</ol>
+<blockquote>
+<p>I made this language just for learning and fun. My professor Dr. Prabir Kumar Naskar sir inspired me a lot for this work. I had a paper <strong>Compiler Design</strong> in my 5th semester. There i learnt basics about compiler design . I also knew python and had some experience in developing. So i started this <a href="http://project.At">project.At</a> first i wanted to make a Markup language but suddenly my attenstion went to <strong>LOGO</strong> which was my first programming language .So i wanted to rebuild this with some extra features .</p>
+</blockquote>
+<ol start="4">
+<li>Why the name Artiquno ?</li>
+</ol>
+<blockquote>
+<p>The name <strong>Artiquno</strong> was inspired from the pokemon Articuno. I altered the spelling to avoid the <a href="http://copyright.As">copyright.As</a> this is a Graphic language i wanted the name Art with it.</p>
+</blockquote>
+<hr>
+<h1 class="mume-header" id="how-to-run">How to Run?</h1>
+
+<p>At first make a file with <code>.aq</code> extension. Then go to<br>
+the folder consists <code>Artiquno.exe</code>. Now open the <code>Command Prompt</code> on that location and do this.</p>
+<pre data-role="codeBlock" data-info="Bash" class="language-bash">Artiquno.exe path/filename.eq
+</pre><h1 class="mume-header" id="syntaxes"><strong>Syntaxes</strong></h1>
+
+<blockquote>
+<p><strong>Creator</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="Bash" class="language-bash">Artiquno.exe --creator
+</pre><hr>
+<blockquote>
+<p><strong>Version</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="Bash" class="language-bash">Artiquno.exe --version
+</pre><hr>
+<blockquote>
+<p><strong>Comment</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp"><span class="token comment">//comment the line</span>
+</pre><hr>
+<blockquote>
+<p><strong>Variable</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp">@VariableName<span class="token punctuation">;</span> 	
+</pre><hr>
+<blockquote>
+<p><strong>Assign Variable</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp">@variable_1<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token attribute"><span class="token class-name">int</span><span class="token attribute-arguments"><span class="token punctuation">(</span><span class="token number">7</span><span class="token punctuation">)</span></span></span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> 
+@variable_2<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token attribute"><span class="token class-name">float</span><span class="token attribute-arguments"><span class="token punctuation">(</span><span class="token number">3.14</span><span class="token punctuation">)</span></span></span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+@variable_3<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token attribute"><span class="token class-name">str</span><span class="token attribute-arguments"><span class="token punctuation">(</span><span class="token string">&quot;Artiquno&quot;</span><span class="token punctuation">)</span></span></span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+@variable_4<span class="token operator">=</span>@variable_1<span class="token punctuation">;</span>
+</pre><hr>
+<blockquote>
+<p><strong>Forward</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp"><span class="token comment">//type &gt;&gt; and then a real number</span>
+<span class="token operator">&gt;&gt;</span><span class="token number">100</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">-</span><span class="token number">100</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;</span><span class="token number">3.14</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;</span>@variable<span class="token punctuation">;</span>
+</pre><hr>
+<blockquote>
+<p><strong>Backward</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp"><span class="token comment">//type &lt;&lt; and then a real number</span>
+<span class="token operator">&lt;&lt;</span><span class="token number">100</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;&lt;</span><span class="token operator">-</span><span class="token number">100</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;&lt;</span><span class="token number">3.14</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;&lt;</span>@variable<span class="token punctuation">;</span>
+</pre><hr>
+<blockquote>
+<p><strong>Rotate</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp"><span class="token comment">//type ^^ and then a angle as real number</span>
+<span class="token operator">&lt;&lt;</span><span class="token number">100</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;&lt;</span><span class="token operator">-</span><span class="token number">100</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;&lt;</span><span class="token number">3.14</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;&lt;</span>@variable<span class="token punctuation">;</span>
+</pre><hr>
+<blockquote>
+<p><strong>Pen up</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp">PU<span class="token punctuation">;</span>
+</pre><hr>
+<blockquote>
+<p><strong>Pen Down</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp">PD<span class="token punctuation">;</span>
+</pre><hr>
+<blockquote>
+<p><strong>Hide Arrow</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp">HIDE<span class="token punctuation">;</span>
+</pre><hr>
+<blockquote>
+<p><strong>Show Arrow</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp">SHOW<span class="token punctuation">;</span>
+</pre><hr>
+<blockquote>
+<p><strong>Go To a position</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp"><span class="token comment">// write X then write a real number and do the same with Y</span>
+X100Y50<span class="token punctuation">;</span>
+X<span class="token operator">-</span>100Y50<span class="token punctuation">;</span>
+X73<span class="token punctuation">.</span>89Y67<span class="token punctuation">.</span><span class="token number">53</span><span class="token punctuation">;</span>
+X0Y0<span class="token punctuation">;</span>
+</pre><hr>
+<blockquote>
+<p><strong>Set Window size</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp"><span class="token comment">// write WINDOW-X then write a positive integer and do the same with Y</span>
+WINDOW<span class="token operator">-</span>X400Y400<span class="token punctuation">;</span> 
+</pre><hr>
+<blockquote>
+<p><strong>Set Background Color</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp"><span class="token comment">// write BG-R then write a positive integer between 0-255 and do the same with G and B </span>
+BG<span class="token operator">-</span>R100G50B20<span class="token punctuation">;</span> 
+</pre><hr>
+<blockquote>
+<p><strong>Set Pen Color</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp"><span class="token comment">// write COL-R then write a positive integer between 0-255 and do the same with G and B </span>
+BG<span class="token operator">-</span>R100G50B20<span class="token punctuation">;</span> 
+</pre><hr>
+<blockquote>
+<p><strong>Set Fill Color</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp"><span class="token comment">// write FILL-R then write a positive integer between 0-255 and do the same with G and B </span>
+FILL<span class="token operator">-</span>R100G50B2<span class="token punctuation">;</span> 
+</pre><hr>
+<blockquote>
+<p><strong>Start filling</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp">STARTFILL<span class="token punctuation">;</span>                                        
+</pre><hr>
+<blockquote>
+<p><strong>Stop filling</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp">STOPFILL<span class="token punctuation">;</span>                                        
+</pre><hr>
+<blockquote>
+<p><strong>Pen Width</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp"><span class="token comment">//type WIDTH-&gt;integer;</span>
+WIDTH<span class="token operator">-&gt;</span><span class="token number">10</span><span class="token punctuation">;</span>
+</pre><hr>
+<blockquote>
+<p><strong>Mathematical Expression</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp">@newvar<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token operator">*</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+@newvar<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token attribute"><span class="token class-name">sin</span><span class="token attribute-arguments"><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span></span></span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+@newvar<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">[</span>@newvar<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+@newvar<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token attribute"><span class="token class-name">int</span><span class="token attribute-arguments"><span class="token punctuation">(</span>@newvar<span class="token punctuation">)</span></span></span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>                              
+</pre><hr>
+<blockquote>
+<p>*<em>Mathematical Expression</em></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp">@newvar<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token operator">*</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+@newvar<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token attribute"><span class="token class-name">sin</span><span class="token attribute-arguments"><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span></span></span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+@newvar<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">[</span>@newvar<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+@newvar<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token attribute"><span class="token class-name">int</span><span class="token attribute-arguments"><span class="token punctuation">(</span>@newvar<span class="token punctuation">)</span></span></span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>                              
+</pre><hr>
+<blockquote>
+<p><strong>Speed of the pen</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp">SPEED<span class="token operator">-</span>VERYFAST<span class="token punctuation">;</span>
+SPEED<span class="token operator">-</span>FAST<span class="token punctuation">;</span>
+SPEED<span class="token operator">-</span>NORMAL<span class="token punctuation">;</span>
+SPEED<span class="token operator">-</span>SLOW<span class="token punctuation">;</span>        
+</pre><hr>
+<blockquote>
+<p><strong>Print statement</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp">WRITE<span class="token operator">-&gt;</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">&quot;HELLO EVERYONE&quot;</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">;</span>
+WRITE<span class="token operator">-&gt;</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">&quot;HELLO EVERYONE&quot;</span><span class="token operator">+</span><span class="token string">&quot; AND YOU&quot;</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">;</span>
+WRITE<span class="token operator">-&gt;</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">&quot;My age is &quot;</span><span class="token operator">+</span><span class="token function">str</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">;</span>
+WRITE<span class="token operator">-&gt;</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">&quot;My name is &quot;</span> <span class="token operator">+</span> @name<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">;</span>
+</pre><hr>
+<blockquote>
+<p><strong>Input statement</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp">@n<span class="token operator">=</span>TAKE<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">&quot;Enter a number: &quot;</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">;</span>
+@n<span class="token operator">=</span>TAKE<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">&quot;Enter &quot;</span><span class="token operator">+</span> @i <span class="token operator">+</span><span class="token string">&quot;th number: &quot;</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">;</span>
+</pre><hr>
+<blockquote>
+<p><strong>Conditional statement</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp">IF<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token attribute"><span class="token class-name">EXPRESSION</span></span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token comment">//CONDITION</span>
+    THEN<span class="token operator">-&gt;</span><span class="token punctuation">{</span>
+        <span class="token comment">//IF INTRUCTION</span>
+    <span class="token punctuation">}</span>
+    ELSE<span class="token operator">-&gt;</span><span class="token punctuation">{</span>
+        <span class="token comment">//IF INTRUCTION</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//example code</span>
+IF<span class="token punctuation">[</span><span class="token punctuation">[</span>@name<span class="token operator">==</span><span class="token string">&quot;Mainak&quot;</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">{</span>    <span class="token comment">//CONDITION</span>
+    THEN<span class="token operator">-&gt;</span><span class="token punctuation">{</span>
+        WRITE<span class="token operator">-&gt;</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">&quot;I will not greet you &quot;</span> <span class="token operator">+</span> @name<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    ELSE<span class="token operator">-&gt;</span><span class="token punctuation">{</span>
+        WRITE<span class="token operator">-&gt;</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">&quot;Hello &quot;</span> <span class="token operator">+</span> @name <span class="token operator">+</span> <span class="token string">&quot;! Have a nice day&quot;</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><hr>
+<blockquote>
+<p><strong>Loop statement</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp"><span class="token function">LOOP</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">//loop</span>
+    <span class="token comment">//code here</span>
+<span class="token punctuation">}</span>   
+
+<span class="token comment">//example code</span>
+@i<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token attribute"><span class="token class-name">int</span><span class="token attribute-arguments"><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span></span></span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token function">LOOP</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    WRITE<span class="token operator">-&gt;</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token function">str</span><span class="token punctuation">(</span>@i<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">&quot;\n&quot;</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    @i<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">[</span>@i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</pre><hr>
+<blockquote>
+<p><strong>Text statement</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp"><span class="token comment">//TEXT(textsize)-&gt;[[text]]</span>
+<span class="token function">TEXT</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">&quot;WELCOME BOSS&quot;</span><span class="token punctuation">]</span><span class="token punctuation">]</span> 
+<span class="token function">TEXT</span><span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">&quot;Welcome boss&quot;</span><span class="token operator">+</span><span class="token string">&quot; and you&quot;</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">;</span>
+<span class="token function">TEXT</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">&quot;My age is &quot;</span><span class="token operator">+</span><span class="token function">str</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">;</span>
+<span class="token function">TEXT</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">&quot;My name is &quot;</span> <span class="token operator">+</span> @name<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">;</span>
+</pre><hr>
+<blockquote>
+<p><strong>BUNCH</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp"> <span class="token comment">//code replacer, acts like a function but not a function, we can&apos;t any parameter to it</span>
+
+BUNCH<span class="token operator">-&gt;</span>SETNAME<span class="token punctuation">{</span>   
+    <span class="token comment">//code here</span>
+<span class="token punctuation">}</span>
+
+</pre><hr>
+<blockquote>
+<p><strong>Call BUNCH</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp"><span class="token operator">&lt;</span>SETNAME<span class="token operator">&gt;</span>      <span class="token comment">//call BUNCH</span>
+</pre><hr>
+<blockquote>
+<p><strong>Example of BUNCH</strong></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp">BUNCH<span class="token operator">-&gt;</span>rect<span class="token punctuation">{</span> <span class="token comment">//this is a bunch of rectangle</span>
+    @size<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token attribute"><span class="token class-name">int</span><span class="token attribute-arguments"><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span></span></span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token operator">&gt;&gt;</span>@size<span class="token punctuation">;</span>
+    <span class="token operator">^</span><span class="token operator">^</span><span class="token number">90</span><span class="token punctuation">;</span>
+    <span class="token operator">&gt;&gt;</span>@size<span class="token punctuation">;</span>
+    <span class="token operator">^</span><span class="token operator">^</span><span class="token number">90</span><span class="token punctuation">;</span>
+    <span class="token operator">&gt;&gt;</span>@size<span class="token punctuation">;</span>
+    <span class="token operator">^</span><span class="token operator">^</span><span class="token number">90</span><span class="token punctuation">;</span>
+    <span class="token operator">&gt;&gt;</span>@size<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token operator">&lt;</span>rect<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;</span><span class="token number">100</span><span class="token punctuation">;</span>
+
+<span class="token operator">&lt;</span>rect<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;</span><span class="token number">100</span><span class="token punctuation">;</span>
+
+<span class="token operator">&lt;</span>rect<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+</pre><hr>
+<blockquote>
+<p><strong>An example of how to run code</strong></p>
+</blockquote>
+<hr>
+<p>File structure</p>
+<pre data-role="codeBlock" data-info="Bash" class="language-bash">D:.
+&#x2502;   Artiquno.exe
+&#x2502;   Artiquno.png
+&#x2502;   README.md
+&#x2502;
+&#x251C;&#x2500;&#x2500;&#x2500;example codes
+       sun.aq
+
+</pre><hr>
+<p>Example code: <a href="http://sun.aq">sun.aq</a></p>
+<pre data-role="codeBlock" data-info="csharp" class="language-csharp">SPEED<span class="token operator">-</span>VERYFAST<span class="token punctuation">;</span>
+@i<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token attribute"><span class="token class-name">int</span><span class="token attribute-arguments"><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span></span></span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+PU<span class="token punctuation">;</span>
+<span class="token operator">^</span><span class="token operator">^</span><span class="token number">90</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;&lt;</span><span class="token number">100</span><span class="token punctuation">;</span>
+<span class="token operator">^</span><span class="token operator">^</span><span class="token operator">-</span><span class="token number">90</span><span class="token punctuation">;</span>
+PD<span class="token punctuation">;</span>
+COL<span class="token operator">-</span>R255G123B0<span class="token punctuation">;</span>
+BG<span class="token operator">-</span>R25G217B227<span class="token punctuation">;</span>
+FILL<span class="token operator">-</span>R255G255B0<span class="token punctuation">;</span>
+
+STARTFILL<span class="token punctuation">;</span>
+WIDTH<span class="token operator">-&gt;</span><span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token function">LOOP</span><span class="token punctuation">(</span><span class="token number">90</span><span class="token punctuation">)</span><span class="token punctuation">{</span> 
+        @i<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">[</span>@i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token operator">&gt;&gt;</span><span class="token number">10</span><span class="token punctuation">;</span>
+        <span class="token operator">^</span><span class="token operator">^</span><span class="token number">4</span><span class="token punctuation">;</span>
+        <span class="token operator">^</span><span class="token operator">^</span><span class="token operator">-</span><span class="token number">90</span><span class="token punctuation">;</span>
+        IF<span class="token punctuation">[</span><span class="token punctuation">[</span>@i<span class="token operator">%</span><span class="token number">2</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">{</span>
+                THEN<span class="token operator">-&gt;</span><span class="token punctuation">{</span>
+                        <span class="token operator">&gt;&gt;</span><span class="token number">20</span><span class="token punctuation">;</span><span class="token operator">&lt;&lt;</span><span class="token number">20</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                ELSE<span class="token operator">-&gt;</span><span class="token punctuation">{</span>
+                      <span class="token operator">&gt;&gt;</span><span class="token number">40</span><span class="token punctuation">;</span>   <span class="token operator">&lt;&lt;</span><span class="token number">40</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        
+        
+        <span class="token operator">^</span><span class="token operator">^</span><span class="token number">90</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>    
+ENDFILL<span class="token punctuation">;</span>
+COL<span class="token operator">-</span>R255G0B0<span class="token punctuation">;</span>
+PU<span class="token punctuation">;</span>
+X<span class="token operator">-</span>80Y<span class="token operator">-</span><span class="token number">80</span><span class="token punctuation">;</span>
+PD<span class="token punctuation">;</span>
+<span class="token function">TEXT</span><span class="token punctuation">(</span><span class="token number">60</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">&quot;SUN&quot;</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+ 
+</pre><hr>
+<p>Run code</p>
+<pre data-role="codeBlock" data-info="Bash" class="language-bash">Artiquno.exe <span class="token string">&quot;example codes\sun.aq&quot;</span>
+</pre><p>Output:<br>
+<img src="images%5Csun_output.png" alt="alt text"></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

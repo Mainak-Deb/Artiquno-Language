@@ -1,0 +1,9 @@
+SPEED-VERYFAST;
+@shape=[[int(560)]];
+@i=[[int(0)]];
+WIDTH->10;
+LOOP(@shape){
+    @i=[[@i+0.4]];
+    >>@i;
+    ^^20;
+};
